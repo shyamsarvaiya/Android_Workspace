@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--create an application to hide TextView when first button click and show
+    when second button click-->
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity6">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_marginTop="50dp"
+        android:text="TEXTVIEW"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        android:textSize="50sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/but1"
+        android:layout_below="@+id/text1"
+        android:text="Hide Me"
+        android:textSize="25sp"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/but2"
+        android:layout_below="@+id/but1"
+        android:text="Show Me"
+        android:textSize="25sp"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Create an application with radio buttons (Add, Subtraction, Multiply,
+    Division) EditText (number1, number2) and print result as per user choice
+    from radio button in TextView-->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity5">
+
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_marginTop="100dp"
+        android:hint="Enter Number 1"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/num2"
+        android:layout_below="@+id/num1"
+        android:hint="Enter Number 2"
+        android:inputType="number"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+<RadioGroup
+    android:layout_below="@+id/num2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RadioButton
+        android:id="@+id/sum"
+        android:text="Add"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RadioButton
+        android:id="@+id/sub"
+        android:layout_below="@+id/sum"
+        android:text="Subtraction"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RadioButton
+        android:id="@+id/multi"
+        android:layout_below="@+id/sub"
+        android:text="Multiply"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RadioButton
+        android:id="@+id/div"
+        android:layout_below="@+id/multi"
+        android:text="Division"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RadioGroup>
+    <TextView
+        android:id="@+id/total"
+        android:layout_marginTop="500dp"
+        android:textSize="25sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
